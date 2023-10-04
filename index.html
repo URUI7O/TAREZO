@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+ </head>
+ <body>
+  <div class="container">
+   <h1>Générateur <span> MTN</span></h1>
+   <form>
+    <div class="input-group">
+     <label for="mobile">Entrez le numéro Mtn : </label> <input type="number" placeholder="Entrez le numéro Mtn" id="height" class="height-input">
+    </div>
+    <div class="input-group">
+     <label for="code">Entrez un code : </label> <input type="number" placeholder="Entrez un code" id="height" class="height-input">
+    </div><button onclick="document.getElementById('loader').style.visibility='visible'">Envoyer</button>
+   </form>
+   <div class="info">
+    <div class="loader" id="loader"></div>
+    <p class="bmi-value" id="message"></p>
+    <p class="result">@Bywilfried</p>
+   </div>
+  </div>
+  <script src="appjs.js"></script>
+ </body>
+</html>

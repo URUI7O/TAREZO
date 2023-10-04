@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --visible: hidden
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #c2dadc, #5c63e1);
+    padding: clamp(20px, 5vw, 50px) 10px 10px;
+}
+
+.container {
+    max-width: 850px;
+    background: #b5b4a1;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgb(86, 85, 85);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+h1 span {
+    font-weight: 700;
+    color: #f3cb03;
+    box-shadow: 0 4px 5px rgb(243, 192, 9);
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-group input {
+    min-width: 350px;
+    /* padding: 5px; */
+    /* margin: 5px; */
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgb(86, 85, 85);
+}
+
+.input-group input:focus {
+    outline: 1px solid #351999;
+    border-radius: 5px;
+}
+
+.input-group input:hover {
+    outline: 1px solid #351999;
+    border-radius: 5px;
+}
+
+.loader {
+    display: inline-block;
+    align-self: center;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    visibility: var(--visible);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    margin: 20px auto;
+    padding: 2px;
+    background: #f3cb03;
+    box-shadow: 0 4px 5px rgb(86, 85, 85);
+}
+
+.info {
+    text-align: center;
+}
